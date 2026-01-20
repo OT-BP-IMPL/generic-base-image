@@ -12,7 +12,7 @@ RUN apt-get update && \
         python3 python3-pip python3-dev python3-venv libffi-dev libssl-dev awscli \
         default-jdk ca-certificates-java \
         zip bzip2 gzip p7zip-full \
-        jq git htop tree file man-db \
+        jq git git-restore-mtime htop tree file man-db \
     && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
     && echo $TZ > /etc/timezone \
     && locale-gen en_US.UTF-8 \
